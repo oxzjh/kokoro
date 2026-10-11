@@ -1,0 +1,6 @@
+github.com/oxzjh/chinese v0.1.0 h1:iIEJRu9uLHmFKevuGDiLvsPGL4kWviYpZ6UZcChk3ZA=
+github.com/oxzjh/chinese v0.1.0/go.mod h1:IASHRfsz/8dleZt1q1VEdhUEW96VOyLAubZ+OQCCZvw=
+github.com/oxzjh/ort v0.1.0 h1:1fqSBoeIL/TPlk8jNF8s3cl8rp7A/11pV+PPdRurLw8=
+github.com/oxzjh/ort v0.1.0/go.mod h1:hK5ubAgNn/xzSuIrU7wf/OV+qgbUppBQfieEk31naF8=
+github.com/oxzjh/pinyin v0.1.0 h1:0Eba3MaGl02UAjofryTmuJTO0PVCb9ZaBLh0RAxYdzA=
+github.com/oxzjh/pinyin v0.1.0/go.mod h1:nfj3cQ1Fv1DN0S6CWK1ZdSTQr+olhNxI7YnFTHjgi4o=
