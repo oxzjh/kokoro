@@ -51,3 +51,11 @@ func New(model string, threads int) (*Kokoro, error) {
 	}
 	return &Kokoro{engine}, nil
 }
+
+func NewWithBuffer(model []byte, threads int) (*Kokoro, error) {
+	engine, err := ort.NewWithBuffer(model, "kokoro", threads)
+	if err != nil {
+		return nil, err
+	}
+	return &Kokoro{engine}, nil
+}
