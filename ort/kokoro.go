@@ -3,6 +3,7 @@ package ort
 import (
 	"unsafe"
 
+	"github.com/oxzjh/kokoro"
 	"github.com/oxzjh/ort"
 )
 
@@ -44,7 +45,7 @@ func (k *Kokoro) Close() {
 	}
 }
 
-func New(model string, threads int) (*Kokoro, error) {
+func New(model string, threads int) (kokoro.IInterpreter, error) {
 	engine, err := ort.New(model, "kokoro", threads)
 	if err != nil {
 		return nil, err
@@ -52,7 +53,7 @@ func New(model string, threads int) (*Kokoro, error) {
 	return &Kokoro{engine}, nil
 }
 
-func NewWithBuffer(model []byte, threads int) (*Kokoro, error) {
+func NewWithBuffer(model []byte, threads int) (kokoro.IInterpreter, error) {
 	engine, err := ort.NewWithBuffer(model, "kokoro", threads)
 	if err != nil {
 		return nil, err
